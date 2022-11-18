@@ -1,8 +1,8 @@
 <template>
   <div>
-    <p>
+    <h2>
       Product Details for <strong>{{ id }}</strong>
-    </p>
+    </h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque
       reprehenderit eum repellendus hic, saepe modi in itaque praesentium alias.
@@ -12,4 +12,8 @@
 
 <script setup>
 const { id } = useRoute().params;
+
+definePageMeta({
+  layout: "products",
+});
 </script>

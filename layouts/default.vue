@@ -11,7 +11,6 @@
       </nav>
     </header>
 
-    <!-- output page content -->
     <div>
       <slot />
     </div>
