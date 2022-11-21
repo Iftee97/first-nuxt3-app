@@ -9,10 +9,17 @@
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
       delectus iusto quidem quo id adipisci quas porro libero harum! Nisi!
     </p>
+    <div>{{ data }}</div>
   </div>
 </template>
 
 <script setup>
+const { data } = await useFetch("/api/ninja?name=Iftee", {
+  method: "post",
+  body: {
+    age: 25,
+  },
+}); // GET (without options object) / POST (with options object) data
 </script>
 
 <style scoped>
